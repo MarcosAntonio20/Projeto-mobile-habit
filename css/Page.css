@@ -1,0 +1,135 @@
+.page {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  padding-top: var(--header-height);
+  padding-bottom: var(--bottom-nav-clearance);
+  padding-left: var(--margin-mobile);
+  padding-right: var(--margin-mobile);
+  background-color: var(--color-surface);
+}
+
+.page__container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.breadcrumb {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2xs);
+  color: var(--color-on-surface-variant);
+  width: fit-content;
+}
+
+.breadcrumb:hover {
+  color: var(--color-on-surface);
+}
+
+.breadcrumb .material-symbols-outlined {
+  font-size: 16px;
+}
+
+.breadcrumb__label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  width: fit-content;
+  padding: 2px var(--space-xs);
+  background-color: var(--color-surface-container-high);
+  border-radius: var(--radius-default);
+  color: var(--color-on-surface-variant);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.page__title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  color: var(--color-on-surface);
+}
+
+.page__subtitle {
+  font-family: var(--font-sans);
+  font-size: 14px;
+  line-height: 20px;
+  color: var(--color-on-surface-variant);
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.section__header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.section__heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.section__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-circle);
+  background-color: var(--color-secondary);
+}
+
+.section__title {
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 600;
+  color: var(--color-on-surface);
+}
+
+.section__count {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+}
+
+.divider-label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  width: 100%;
+}
+
+.divider-label__line {
+  height: 1px;
+  flex: 1;
+  background-color: var(--color-surface-container-high);
+}
+
+.divider-label__text {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-outline);
+}

@@ -1,0 +1,102 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 50;
+  background-color: rgba(246, 249, 255, 0.8);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  box-shadow: var(--shadow-header);
+}
+
+.header__content {
+  height: var(--header-height);
+  padding-left: var(--margin-mobile);
+  padding-right: var(--margin-mobile);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu-btn {
+  width: 2.75rem;
+  height: 2.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-on-surface);
+  transition: color 0.15s ease;
+}
+
+.header__menu-btn:hover {
+  color: var(--color-on-surface-variant);
+}
+
+.header__menu-btn .material-symbols-outlined {
+  font-size: 24px;
+}
+
+.header__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.header__brand-badge {
+  padding: var(--space-2xs) var(--space-md);
+  background-color: var(--color-surface-container);
+  border: 1px solid rgba(118, 119, 125, 0.3);
+  border-radius: var(--radius-default);
+}
+
+.header__brand-name {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.04em;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--color-on-surface);
+}
+
+.header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.header__login {
+  height: 2.25rem;
+  padding: 0 var(--space-md);
+  border: 1px solid var(--color-outline);
+  border-radius: var(--radius-default);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--color-on-surface);
+  transition: background-color 0.15s ease;
+}
+
+.header__login:hover {
+  background-color: var(--color-surface-container);
+}
+
+.header__avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-circle);
+  background-color: var(--color-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.header__avatar .material-symbols-outlined {
+  color: var(--color-on-primary);
+  font-size: 18px;
+}
